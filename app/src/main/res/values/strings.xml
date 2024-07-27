@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TaskForAppTech</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="api_key">2fd09ac4599f4c486a94067535b3010e</string>
+    <string name="movie_item">Movies</string>
+    <string name="cat_item">Cat Breeds</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home_item">Home</string>
+    <string name="weather_item">Weather</string>
+</resources>

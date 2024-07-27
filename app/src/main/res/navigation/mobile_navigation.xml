@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.example.taskforapptech.views.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.taskforapptech.views.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_catBreedsFragment"
+            app:destination="@id/catBreedsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catBreedsFragment"
+        android:name="com.example.taskforapptech.views.CatBreedsFragment"
+        android:label="fragment_cat_breeds"
+        tools:layout="@layout/fragment_cat_breeds" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.taskforapptech.views.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+</navigation>
